@@ -7,15 +7,59 @@
 
 import UIKit
 import CoreData
+import Reachability
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var arrBookMarkIds: [String] = []
+    let reachability = try! Reachability()
+    var isInternetAvailable = true
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        navigationbarAppearance()
+        applicationDocumentsDirectory()
+
+        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged(note:)), name: .reachabilityChanged, object: reachability)
+        do{
+            try reachability.startNotifier()
+        }catch{
+            print("could not start reachability notifier")
+        }
+        
         return true
+    }
+    
+    @objc func reachabilityChanged(note: Notification) {
+
+      let reachability = note.object as! Reachability
+
+      switch reachability.connection {
+      case .wifi:
+          print("Reachable via WiFi")
+        isInternetAvailable = true
+      case .cellular:
+          print("Reachable via Cellular")
+        isInternetAvailable = true
+      case .unavailable:
+        print("Network not reachable")
+        isInternetAvailable = false
+      case .none:
+        print("")
+        isInternetAvailable = false
+      }
+    }
+    
+    // MARK: setup navigationbar
+    
+    func navigationbarAppearance() {
+        UINavigationBar.appearance().barTintColor = .white
+        UINavigationBar.appearance().tintColor = .black
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+        UINavigationBar.appearance().isTranslucent = false
     }
 
     // MARK: UISceneSession Lifecycle
@@ -77,5 +121,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+    
+    func applicationDocumentsDirectory() {
+        if let url = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).last {
+            print(url.absoluteString)
+        }
+    }
+
 }
+
+
 

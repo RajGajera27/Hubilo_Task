@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,6 @@
 		3532DB8A2646F01800E2C689 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3532DB892646F01800E2C689 /* SceneDelegate.swift */; };
 		3532DB8C2646F01800E2C689 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3532DB8B2646F01800E2C689 /* ViewController.swift */; };
 		3532DB8F2646F01800E2C689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3532DB8D2646F01800E2C689 /* Main.storyboard */; };
-		3532DB922646F01800E2C689 /* Hubilo_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3532DB902646F01800E2C689 /* Hubilo_Task.xcdatamodeld */; };
 		3532DB942646F01C00E2C689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3532DB932646F01C00E2C689 /* Assets.xcassets */; };
 		3532DB972646F01C00E2C689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3532DB952646F01C00E2C689 /* LaunchScreen.storyboard */; };
 		3532DBAA2646F5DA00E2C689 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3532DBA82646F5DA00E2C689 /* CustomTableViewCell.xib */; };
@@ -19,6 +18,13 @@
 		3532DBAF2646F5E400E2C689 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3532DBAD2646F5E400E2C689 /* CustomCollectionViewCell.swift */; };
 		3532DBB02646F5E400E2C689 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3532DBAE2646F5E400E2C689 /* CustomCollectionViewCell.xib */; };
 		3532DBB32646F69F00E2C689 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3532DBB22646F69F00E2C689 /* DetailViewController.swift */; };
+		3532DBB826471F8E00E2C689 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3532DBB726471F8E00E2C689 /* ViewModel.swift */; };
+		3532DBBB26471FA000E2C689 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3532DBBA26471FA000E2C689 /* Model.swift */; };
+		3532DBBF2647203F00E2C689 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3532DBBE2647203F00E2C689 /* Extension.swift */; };
+		3532DBC42647206600E2C689 /* Detail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3532DBC22647206600E2C689 /* Detail+CoreDataClass.swift */; };
+		3532DBC52647206600E2C689 /* Detail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3532DBC32647206600E2C689 /* Detail+CoreDataProperties.swift */; };
+		3532DBCF264720FF00E2C689 /* Hubilo_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3532DBCD264720FF00E2C689 /* Hubilo_Task.xcdatamodeld */; };
+		4A5C12CAA00AFD613957C7FE /* Pods_Hubilo_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E5F48E012EB183E9FA2F26 /* Pods_Hubilo_Task.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +33,6 @@
 		3532DB892646F01800E2C689 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3532DB8B2646F01800E2C689 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3532DB8E2646F01800E2C689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3532DB912646F01800E2C689 /* Hubilo_Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hubilo_Task.xcdatamodel; sourceTree = "<group>"; };
 		3532DB932646F01C00E2C689 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3532DB962646F01C00E2C689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3532DB982646F01C00E2C689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +41,15 @@
 		3532DBAD2646F5E400E2C689 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		3532DBAE2646F5E400E2C689 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		3532DBB22646F69F00E2C689 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3532DBB726471F8E00E2C689 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		3532DBBA26471FA000E2C689 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3532DBBE2647203F00E2C689 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		3532DBC22647206600E2C689 /* Detail+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Detail+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3532DBC32647206600E2C689 /* Detail+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Detail+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3532DBCE264720FF00E2C689 /* test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = test.xcdatamodel; sourceTree = "<group>"; };
+		A2E5F48E012EB183E9FA2F26 /* Pods_Hubilo_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hubilo_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E68BF9447E84A2F968AB6760 /* Pods-Hubilo_Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hubilo_Task.release.xcconfig"; path = "Target Support Files/Pods-Hubilo_Task/Pods-Hubilo_Task.release.xcconfig"; sourceTree = "<group>"; };
+		ED5703CBA73C524D2DED76D7 /* Pods-Hubilo_Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hubilo_Task.debug.xcconfig"; path = "Target Support Files/Pods-Hubilo_Task/Pods-Hubilo_Task.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A5C12CAA00AFD613957C7FE /* Pods_Hubilo_Task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +69,8 @@
 			children = (
 				3532DB862646F01800E2C689 /* Hubilo_Task */,
 				3532DB852646F01800E2C689 /* Products */,
+				DEE4AA9C55DF65BF3017345E /* Pods */,
+				DFB84A29DBF68FE3EE3303EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +85,7 @@
 		3532DB862646F01800E2C689 /* Hubilo_Task */ = {
 			isa = PBXGroup;
 			children = (
+				3532DBBD2647203200E2C689 /* HelperClass */,
 				3532DBA72646F5B700E2C689 /* CustomCollectionViewCell */,
 				3532DBA52646F59F00E2C689 /* CustomTableViewCell */,
 				3532DB9F2646F21900E2C689 /* AppDelagate */,
@@ -75,6 +93,8 @@
 				3532DBA22646F27300E2C689 /* CoreData */,
 				3532DBA12646F25400E2C689 /* Storyboard */,
 				3532DBA32646F28700E2C689 /* ViewController */,
+				3532DBB526471F1F00E2C689 /* ViewModel */,
+				3532DBB626471F2D00E2C689 /* Model */,
 				3532DB932646F01C00E2C689 /* Assets.xcassets */,
 				3532DB982646F01C00E2C689 /* Info.plist */,
 			);
@@ -109,7 +129,8 @@
 		3532DBA22646F27300E2C689 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				3532DB902646F01800E2C689 /* Hubilo_Task.xcdatamodeld */,
+				3532DBCD264720FF00E2C689 /* Hubilo_Task.xcdatamodeld */,
+				3532DBC12647205800E2C689 /* Model */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -141,6 +162,56 @@
 			path = CustomCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		3532DBB526471F1F00E2C689 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3532DBB726471F8E00E2C689 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3532DBB626471F2D00E2C689 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3532DBBA26471FA000E2C689 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3532DBBD2647203200E2C689 /* HelperClass */ = {
+			isa = PBXGroup;
+			children = (
+				3532DBBE2647203F00E2C689 /* Extension.swift */,
+			);
+			path = HelperClass;
+			sourceTree = "<group>";
+		};
+		3532DBC12647205800E2C689 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3532DBC22647206600E2C689 /* Detail+CoreDataClass.swift */,
+				3532DBC32647206600E2C689 /* Detail+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEE4AA9C55DF65BF3017345E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED5703CBA73C524D2DED76D7 /* Pods-Hubilo_Task.debug.xcconfig */,
+				E68BF9447E84A2F968AB6760 /* Pods-Hubilo_Task.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DFB84A29DBF68FE3EE3303EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2E5F48E012EB183E9FA2F26 /* Pods_Hubilo_Task.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3532DB9B2646F01C00E2C689 /* Build configuration list for PBXNativeTarget "Hubilo_Task" */;
 			buildPhases = (
+				C16AC16FB66F40EC00933BCB /* [CP] Check Pods Manifest.lock */,
 				3532DB802646F01800E2C689 /* Sources */,
 				3532DB812646F01800E2C689 /* Frameworks */,
 				3532DB822646F01800E2C689 /* Resources */,
+				9CA9864C63BAA16BCB07928B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,17 +281,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9CA9864C63BAA16BCB07928B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hubilo_Task/Pods-Hubilo_Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hubilo_Task/Pods-Hubilo_Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hubilo_Task/Pods-Hubilo_Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C16AC16FB66F40EC00933BCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hubilo_Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3532DB802646F01800E2C689 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3532DBC52647206600E2C689 /* Detail+CoreDataProperties.swift in Sources */,
+				3532DBCF264720FF00E2C689 /* Hubilo_Task.xcdatamodeld in Sources */,
+				3532DBC42647206600E2C689 /* Detail+CoreDataClass.swift in Sources */,
+				3532DBBB26471FA000E2C689 /* Model.swift in Sources */,
 				3532DB8C2646F01800E2C689 /* ViewController.swift in Sources */,
 				3532DBAF2646F5E400E2C689 /* CustomCollectionViewCell.swift in Sources */,
 				3532DBAB2646F5DA00E2C689 /* CustomTableViewCell.swift in Sources */,
-				3532DB922646F01800E2C689 /* Hubilo_Task.xcdatamodeld in Sources */,
+				3532DBBF2647203F00E2C689 /* Extension.swift in Sources */,
 				3532DB882646F01800E2C689 /* AppDelegate.swift in Sources */,
 				3532DB8A2646F01800E2C689 /* SceneDelegate.swift in Sources */,
+				3532DBB826471F8E00E2C689 /* ViewModel.swift in Sources */,
 				3532DBB32646F69F00E2C689 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,11 +483,13 @@
 		};
 		3532DB9C2646F01C00E2C689 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED5703CBA73C524D2DED76D7 /* Pods-Hubilo_Task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Hubilo_Task/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,11 +503,13 @@
 		};
 		3532DB9D2646F01C00E2C689 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E68BF9447E84A2F968AB6760 /* Pods-Hubilo_Task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Hubilo_Task/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -421,12 +545,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3532DB902646F01800E2C689 /* Hubilo_Task.xcdatamodeld */ = {
+		3532DBCD264720FF00E2C689 /* Hubilo_Task.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3532DB912646F01800E2C689 /* Hubilo_Task.xcdatamodel */,
+				3532DBCE264720FF00E2C689 /* test.xcdatamodel */,
 			);
-			currentVersion = 3532DB912646F01800E2C689 /* Hubilo_Task.xcdatamodel */;
+			currentVersion = 3532DBCE264720FF00E2C689 /* test.xcdatamodel */;
 			path = Hubilo_Task.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
