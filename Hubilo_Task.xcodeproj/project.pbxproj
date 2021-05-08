@@ -14,6 +14,11 @@
 		3532DB922646F01800E2C689 /* Hubilo_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3532DB902646F01800E2C689 /* Hubilo_Task.xcdatamodeld */; };
 		3532DB942646F01C00E2C689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3532DB932646F01C00E2C689 /* Assets.xcassets */; };
 		3532DB972646F01C00E2C689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3532DB952646F01C00E2C689 /* LaunchScreen.storyboard */; };
+		3532DBAA2646F5DA00E2C689 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3532DBA82646F5DA00E2C689 /* CustomTableViewCell.xib */; };
+		3532DBAB2646F5DA00E2C689 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3532DBA92646F5DA00E2C689 /* CustomTableViewCell.swift */; };
+		3532DBAF2646F5E400E2C689 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3532DBAD2646F5E400E2C689 /* CustomCollectionViewCell.swift */; };
+		3532DBB02646F5E400E2C689 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3532DBAE2646F5E400E2C689 /* CustomCollectionViewCell.xib */; };
+		3532DBB32646F69F00E2C689 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3532DBB22646F69F00E2C689 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		3532DB932646F01C00E2C689 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3532DB962646F01C00E2C689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3532DB982646F01C00E2C689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3532DBA82646F5DA00E2C689 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		3532DBA92646F5DA00E2C689 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		3532DBAD2646F5E400E2C689 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		3532DBAE2646F5E400E2C689 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		3532DBB22646F69F00E2C689 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,8 @@
 		3532DB862646F01800E2C689 /* Hubilo_Task */ = {
 			isa = PBXGroup;
 			children = (
+				3532DBA72646F5B700E2C689 /* CustomCollectionViewCell */,
+				3532DBA52646F59F00E2C689 /* CustomTableViewCell */,
 				3532DB9F2646F21900E2C689 /* AppDelagate */,
 				3532DBA02646F24500E2C689 /* SceneDelegate */,
 				3532DBA22646F27300E2C689 /* CoreData */,
@@ -106,8 +118,27 @@
 			isa = PBXGroup;
 			children = (
 				3532DB8B2646F01800E2C689 /* ViewController.swift */,
+				3532DBB22646F69F00E2C689 /* DetailViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3532DBA52646F59F00E2C689 /* CustomTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3532DBA92646F5DA00E2C689 /* CustomTableViewCell.swift */,
+				3532DBA82646F5DA00E2C689 /* CustomTableViewCell.xib */,
+			);
+			path = CustomTableViewCell;
+			sourceTree = "<group>";
+		};
+		3532DBA72646F5B700E2C689 /* CustomCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3532DBAD2646F5E400E2C689 /* CustomCollectionViewCell.swift */,
+				3532DBAE2646F5E400E2C689 /* CustomCollectionViewCell.xib */,
+			);
+			path = CustomCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +200,8 @@
 			files = (
 				3532DB972646F01C00E2C689 /* LaunchScreen.storyboard in Resources */,
 				3532DB942646F01C00E2C689 /* Assets.xcassets in Resources */,
+				3532DBAA2646F5DA00E2C689 /* CustomTableViewCell.xib in Resources */,
+				3532DBB02646F5E400E2C689 /* CustomCollectionViewCell.xib in Resources */,
 				3532DB8F2646F01800E2C689 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,9 +214,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3532DB8C2646F01800E2C689 /* ViewController.swift in Sources */,
+				3532DBAF2646F5E400E2C689 /* CustomCollectionViewCell.swift in Sources */,
+				3532DBAB2646F5DA00E2C689 /* CustomTableViewCell.swift in Sources */,
 				3532DB922646F01800E2C689 /* Hubilo_Task.xcdatamodeld in Sources */,
 				3532DB882646F01800E2C689 /* AppDelegate.swift in Sources */,
 				3532DB8A2646F01800E2C689 /* SceneDelegate.swift in Sources */,
+				3532DBB32646F69F00E2C689 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
