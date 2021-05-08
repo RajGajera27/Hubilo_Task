@@ -58,16 +58,56 @@
 		3532DB862646F01800E2C689 /* Hubilo_Task */ = {
 			isa = PBXGroup;
 			children = (
-				3532DB872646F01800E2C689 /* AppDelegate.swift */,
-				3532DB892646F01800E2C689 /* SceneDelegate.swift */,
-				3532DB8B2646F01800E2C689 /* ViewController.swift */,
-				3532DB8D2646F01800E2C689 /* Main.storyboard */,
+				3532DB9F2646F21900E2C689 /* AppDelagate */,
+				3532DBA02646F24500E2C689 /* SceneDelegate */,
+				3532DBA22646F27300E2C689 /* CoreData */,
+				3532DBA12646F25400E2C689 /* Storyboard */,
+				3532DBA32646F28700E2C689 /* ViewController */,
 				3532DB932646F01C00E2C689 /* Assets.xcassets */,
-				3532DB952646F01C00E2C689 /* LaunchScreen.storyboard */,
 				3532DB982646F01C00E2C689 /* Info.plist */,
-				3532DB902646F01800E2C689 /* Hubilo_Task.xcdatamodeld */,
 			);
 			path = Hubilo_Task;
+			sourceTree = "<group>";
+		};
+		3532DB9F2646F21900E2C689 /* AppDelagate */ = {
+			isa = PBXGroup;
+			children = (
+				3532DB872646F01800E2C689 /* AppDelegate.swift */,
+			);
+			path = AppDelagate;
+			sourceTree = "<group>";
+		};
+		3532DBA02646F24500E2C689 /* SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3532DB892646F01800E2C689 /* SceneDelegate.swift */,
+			);
+			path = SceneDelegate;
+			sourceTree = "<group>";
+		};
+		3532DBA12646F25400E2C689 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3532DB8D2646F01800E2C689 /* Main.storyboard */,
+				3532DB952646F01C00E2C689 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3532DBA22646F27300E2C689 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3532DB902646F01800E2C689 /* Hubilo_Task.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		3532DBA32646F28700E2C689 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3532DB8B2646F01800E2C689 /* ViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
